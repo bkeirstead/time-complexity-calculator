@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MegaFieldComponent } from './mega-field/mega-field.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MegaFieldComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
